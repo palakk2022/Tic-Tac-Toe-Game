@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   /* // background-color:rgb(146, 236, 190); */
+    background-color: #b3d89c;
+    text-align: center;
+}
+h1{
+    margin-top: 5px;
+    font-weight: 400px;
+    font-size: 100px;
+    color:#BF5F5F;
+}
+.container{
+    height: 70vh;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin
+}
+.btn1{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size:12vmin;
+    /* color:#D99C9C; */
+   color: #BF5F5F;
+   background-color:lightgoldenrodyellow;
+   
+}
+#resetbtn{
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-size:20px;
+    background-color:#3A1717;
+    border: none;
+    color: wheat;
+    border-radius: 1rem;
+}
+/* SIMPLE NEW BTN */
+/* #new-game{
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-size:20px;
+    background-color:lightcoral;
+    border: none;
+    color: wheat;
+    border-radius: 1rem;
+} */
+/* ANNIMATED NEW BTN */
+#new-game {
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: lightcoral;
+    border: none;
+    color:wheat;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px purple;
+    }
+    50% {
+        box-shadow: 0 0 20px paleturquoise;
+    }
+    100% {
+        box-shadow: 0 0 10px palevioletred;
+    }
+}
+
+#msg{
+    color:white;
+    font-size: 5vmin;
+}
+.msg-container{
+   
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+    
+    opacity: 0; /* Initially hidden */
+    transition: background-color 0.5s ease, opacity 0.5s ease; /* Smooth effect */
+}
